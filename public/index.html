@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #4e4c54;"> 
+    <div class="main-window" style="position: absolute; width: 100%; height: 100%; background-color: #302f33; 
+    color: aliceblue; font-family: 'Ubuntu', sans-serif; font-size: 20px;">
+        <h1>Файлообменник 1.0</h1>
+        <div style="position: relative; padding-left: 10px; width: 500px; height: 200px; 
+        background-color: #4e4c54; border-radius: 10px;">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label>Выбрать Файл</label><br>
+                <input type="file" name="filedata" /><br><br>
+                <input type="submit" value="Send" />
+            </form>
+        </div>
+    </div>
+</body>
+</html>
