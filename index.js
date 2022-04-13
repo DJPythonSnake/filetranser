@@ -4,7 +4,7 @@ const multer  = require("multer");
 const app = express()
 const port = 3000
 
-const dirname = "/home/whiteyaki/nodejs-project/public/"
+const dirname_index = "/home/whiteyaki/filetranser/public/"
 let currentdate = new Date()
 
 app.get('/', (req, res) => {
@@ -12,7 +12,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/page/', (req, res) => {
-    res.sendFile(dirname + '/index.html')
+    res.sendFile(dirname_index + '/index.html')
+})
+
+app.get('/about/', (req, res) => {
+  res.sendFile(dirname_index + '/about.html')
 })
 
 const storageConfig = multer.diskStorage({

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
@@ -9,12 +10,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .main-window {
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        background-color: #302f33; 
+        color: aliceblue; 
+        font-family: 'Ubuntu', sans-serif; 
+        font-size: 20px;
+    }
+    .choose-file-form {
+        position: relative; 
+        padding-left: 10px; 
+        width: 500px; 
+        height: 200px; 
+        background-color: #4e4c54; 
+        border-radius: 10px;
+    }   
+</style>
 <body style="background-color: #4e4c54;"> 
-    <div class="main-window" style="position: absolute; width: 100%; height: 100%; background-color: #302f33; 
-    color: aliceblue; font-family: 'Ubuntu', sans-serif; font-size: 20px;">
-        <h1>Файлообменник 1.0</h1>
-        <div style="position: relative; padding-left: 10px; width: 500px; height: 200px; 
-        background-color: #4e4c54; border-radius: 10px;">
+    <div class="main-window">
+     <div class="topnav">
+        <a class="active" href="/page/">Home</a>
+        <a href="/about/">About</a>
+    </div> 
+    <h1>Файлообменник 1.0</h1>
+        <div class="choose-file-form">
             <form action="/upload" method="post" enctype="multipart/form-data">
                 <label>Выбрать Файл</label><br>
                 <input type="file" name="filedata" /><br><br>
