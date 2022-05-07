@@ -10,11 +10,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    a {
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+</style>
 <body style="background-color: #4e4c54;">
     <div class="about-content" style="position: absolute; width: 100%; height: 100%; background-color: #302f33; 
     color: aliceblue; font-family: 'Ubuntu', sans-serif; font-size: 20px;">
         <p>Этот проект написан одним неизвестным программистом-тинейджером на Node.js. Его идея - файлообменник. 
         Простой сайтик с помощью которого можно обмениваться файлами любого размера</p>
+        <a style="float: right;" href="/page/">На главную</a>
     </div>
 </body>
 </html>

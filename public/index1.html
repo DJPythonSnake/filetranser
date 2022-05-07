@@ -11,6 +11,9 @@
     <title>Document</title>
 </head>
 <style>
+    body {
+        background-color: #4e4c54;
+    }
     /* Add a black background color to the top navigation */
     .topnav {
         background-color: #333;
@@ -54,20 +57,26 @@
         height: 200px; 
         background-color: #4e4c54; 
         border-radius: 10px;
-    }   
+    }
 </style>
-<body style="background-color: #4e4c54;"> 
+<body> 
     <div class="main-window">
      <div class="topnav">
         <a class="active" href="/page/">Home</a>
         <a href="/about/">About</a>
     </div> 
     <h1>Файлообменник 1.0</h1>
+    </script>
         <div class="choose-file-form">
             <form action="/upload" method="post" enctype="multipart/form-data">
-                <label>Выбрать Файл</label><br>
+                <label>Отправить Файл</label><br>
                 <input type="file" name="filedata" /><br><br>
                 <input type="submit" value="Send" />
+            </form>
+            <form action="/send" method="post" enctype="multipart/form-data">
+                <label>Принять Файл</label>
+                <input type="file" name="filedata">
+                <input type="submit" value="Check">
             </form>
         </div>
     </div>
